@@ -8,6 +8,7 @@ function page() {
         <>
             <Link href="/">Página de inicio</Link>
             <h1>Frutas</h1>
+            <i style={{ color: "red" }}> Action / ServerComponent </i>
             <Suspense>
                 <ServerComponent />
             </Suspense>
