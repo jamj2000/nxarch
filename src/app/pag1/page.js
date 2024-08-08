@@ -1,6 +1,5 @@
 import Link from "next/link"
-import ServerComponent from "./server-component"
-import { Suspense } from "react"
+import ClientComponent from "./client-component"
 
 function page() {
 
@@ -8,14 +7,10 @@ function page() {
         <>
             <Link href="/">Página de inicio</Link>
             <h1>Frutas</h1>
-            <i style={{ color: "red" }}> Action / ServerComponent </i>
-            <Suspense>
-                <ServerComponent />
-            </Suspense>
+            <i style={{ color: "red" }}> API / ClientComponent </i>
+            <ClientComponent />
         </>
-
     )
 }
 
 export default page
-
